@@ -1,0 +1,11 @@
+User_ID,Charging_Time_Min,SOC_Before,SOC_After,Charger_Type,SOC_Gain
+1,45,20,65,Fast,45
+2,60,30,80,Fast,50
+3,90,25,70,Normal,45
+4,120,40,90,Fast,50
+5,75,15,55,Normal,40
+6,50,50,95,Fast,45
+7,80,35,75,Normal,40
+8,65,10,60,Fast,50
+9,100,45,85,Normal,40
+10,55,20,70,Fast,50
