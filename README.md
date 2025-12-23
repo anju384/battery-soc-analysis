@@ -1,72 +1,84 @@
 # 🔋 Battery SOC Analysis
 
-Survey Data Analysis for Battery **State of Charge (SOC)** using Python.
+This is a small Python project where I analyzed survey data to understand
+battery charging behavior and **State of Charge (SOC)** trends.
+
+The goal of this project was to practice working with real-world data —
+from loading and cleaning the dataset to generating insights using
+visualizations.
 
 ---
 
-## 📌 Project Overview
+## 📌 What this project is about
 
-This project analyzes survey-based battery charging data to understand
-charging behavior and State of Charge (SOC) trends.  
-It demonstrates real-world data analysis steps including data cleaning,
-feature engineering, and visualization.
+When users charge their devices, how much does the battery SOC actually
+increase?  
+Does charging time always result in better SOC gain?
+
+To explore these questions, I worked with a survey-based dataset and used
+Python to analyze and visualize the data.
+
+This project helped me understand how data analysis works beyond just
+writing code.
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠 Tools I used
 
 - **Python**
-- **Pandas** – data manipulation and analysis
-- **Matplotlib** – data visualization
-- **CSV / Excel-compatible datasets**
+- **Pandas** – for reading, cleaning, and analyzing data
+- **Matplotlib** – for creating graphs
+- **CSV files** (Excel-compatible)
 
 ---
 
-## 📂 Dataset Description
+## 📂 Dataset details
 
-The survey dataset contains the following fields:
+The dataset contains basic information collected from a battery charging
+survey:
 
-| Column Name | Description |
-|------------|------------|
-| User_ID | Unique user identifier |
+| Column | Meaning |
+|------|--------|
+| User_ID | Unique ID for each user |
 | Charging_Time_Hours | Time spent charging |
 | SOC_Before | Battery SOC before charging (%) |
 | SOC_After | Battery SOC after charging (%) |
 
-Two datasets are used:
-- `battery_survey.csv` – raw survey data
-- `cleaned_battery_survey.csv` – cleaned and validated data
+Files included:
+- `battery_survey.csv` → original dataset  
+- `cleaned_battery_survey.csv` → cleaned and validated data  
 
 ---
 
-## ⚙️ Project Workflow
+## ⚙️ What I did step by step
 
-1. Load survey data using Pandas  
-2. Inspect dataset structure and missing values  
-3. Clean invalid SOC values (range 0–100)  
-4. Create a new feature **SOC_Gain**  
-5. Perform basic statistical analysis  
-6. Visualize SOC changes using graphs  
+1. Loaded the survey data using Pandas  
+2. Checked the structure of the dataset and missing values  
+3. Removed invalid SOC values (SOC must be between 0 and 100)  
+4. Created a new column **SOC_Gain** to measure charging improvement  
+5. Calculated basic statistics to understand trends  
+6. Visualized SOC changes using graphs  
 
 ---
 
-## 📊 Visualizations
+## 📊 Visual results
 
-The project generates plots to analyze:
-- SOC gain after charging
-- Charging behavior patterns
+The analysis generates graphs that show:
+- How much SOC increases after charging
+- Patterns in charging behavior
 
-Example outputs:
+These plots are saved as:
 - `Figure_1.png`
 - `Figure_2.png`
 
 ---
 
-## 🚀 How to Run the Project
+## 🚀 How to run this project
 
-1. Clone the repository or download the files
-2. Ensure Python 3 is installed
-3. Install required libraries:
+1. Make sure Python 3 is installed  
+2. Install required libraries:
 
 ```bash
 pip install pandas matplotlib
+
+
